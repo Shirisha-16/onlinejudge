@@ -10,5 +10,5 @@ const ProblemSchema = new Schema({
     testCases: [{ input: String, output: String }],
   });
   
- const ProblemModel = mongoose.model('problem',ProblemSchema)
- module.exports = ProblemModel;
+ const Problem = mongoose.model('problem',ProblemSchema)
+ module.exports = Problem;
