@@ -15,7 +15,7 @@ const Register = () => {
         e.preventDefault();
        const { firstName,lastName, email,password} = data
        try {
-        const {data} = await axios.post('/register',{
+        const {data} = await axios.post('/auth/register',{
           firstName,lastName,email,password 
         })
         if(data.error){
